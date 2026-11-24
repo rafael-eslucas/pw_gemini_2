@@ -1,410 +1,649 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Conscientização sobre o Transtorno do Espectro Autista (TEA)</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #333333;
-            background-color: #f4f7f9;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conscientização TEA | Jovens Adultos</title>
+  <style>
+    /* Reset e Configurações Gerais */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        /* Cabeçalho (Header) */
-        header {
-            background-color: #0056b3;
-            color: #ffffff;
-            padding: 15px 5%;
-            display: flex;
-            align-items: center;
-            border-bottom: 4px solid #ffcc00;
-            box-shadow: 0 4px 8px #cccccc;
-            position: relative;
-        }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #F0F7FF;
+      color: #102A43;
+      line-height: 1.6;
+      position: static;
+    }
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            text-shadow: 1px 1px 2px #000000;
-            margin-right: 40px;
-        }
+    /* Cabeçalho (Header) */
+    header {
+      background-color: #0052CC;
+      color: #FFFFFF;
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 5px solid #FFAB00;
+      box-shadow: 0 4px 8px #091E42;
+      position: relative;
+    }
 
-        nav ul {
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+    }
 
-        nav li {
-            margin-right: 20px;
-        }
+    .logo-badge {
+      background-color: #FF5630;
+      color: #FFFFFF;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 2px solid #FFFFFF;
+      text-shadow: 1px 1px 2px #091E42;
+    }
 
-        nav a {
-            color: #ffffff;
-            font-weight: bold;
-            padding: 8px 12px;
-            border-radius: 5px;
-        }
+    .logo-area h1 {
+      font-size: 1.5rem;
+      text-shadow: 2px 2px 3px #091E42;
+    }
 
-        nav a:hover {
-            background-color: #ffffff;
-            color: #0056b3;
-        }
+    nav ul {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-        /* Seção Principal (Hero Section) */
-        .hero {
-            background-color: #e6f0fa;
-            padding: 50px 5%;
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #d0e1f2;
-            position: static;
-        }
+    nav ul li a {
+      color: #FFFFFF;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+    }
 
-        .hero-texto {
-            width: 50%;
-            padding-right: 20px;
-            position: relative;
-        }
+    nav ul li a:hover {
+      background-color: #0065FF;
+      border: 1px solid #FFAB00;
+      color: #FFAB00;
+    }
 
-        .hero-texto h1 {
-            font-size: 36px;
-            color: #004085;
-            margin-bottom: 15px;
-            text-shadow: 1px 1px 2px #cccccc;
-        }
+    /* Seção Principal (Hero Section) */
+    .hero {
+      background-color: #DEEBFF;
+      padding: 60px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      border-bottom: 4px solid #36B37E;
+      position: relative;
+    }
 
-        .hero-texto p {
-            font-size: 18px;
-            margin-bottom: 25px;
-            color: #444444;
-            text-align: left;
-        }
+    .hero-texto {
+      flex: 1;
+      min-width: 300px;
+      position: relative;
+    }
 
-        .btn-cta {
-            background-color: #0056b3;
-            color: #ffffff;
-            padding: 12px 25px;
-            font-weight: bold;
-            border-radius: 8px;
-            border: 2px solid #004085;
-            box-shadow: 0 4px 6px #cccccc;
-        }
+    .hero-tag {
+      display: inline-block;
+      background-color: #36B37E;
+      color: #FFFFFF;
+      font-weight: bold;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      border: 2px solid #006644;
+    }
 
-        .btn-cta:hover {
-            background-color: #ffcc00;
-            color: #004085;
-        }
+    .hero-texto h2 {
+      font-size: 2.5rem;
+      color: #0747A6;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      text-shadow: 1px 1px 2px #B3D4FF;
+    }
 
-        .hero-midia {
-            width: 50%;
-            position: relative;
-            text-align: center;
-        }
+    .hero-texto p {
+      font-size: 1.15rem;
+      color: #172B4D;
+      margin-bottom: 30px;
+    }
 
-        .hero-midia img {
-            width: 100%;
-            border-radius: 12px;
-            border: 4px solid #ffffff;
-            box-shadow: 0 6px 15px #bbbbbb;
-        }
+    .btn-cta {
+      display: inline-block;
+      background-color: #FF5630;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 15px 30px;
+      border-radius: 8px;
+      border: 2px solid #BF2600;
+      box-shadow: 0 4px 6px #172B4D;
+    }
 
-        .selo-destaque {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #ffcc00;
-            color: #004085;
-            font-weight: bold;
-            padding: 8px 15px;
-            border-radius: 20px;
-            border: 2px solid #004085;
-            box-shadow: 0 3px 6px #999999;
-        }
+    .btn-cta:hover {
+      background-color: #FFAB00;
+      color: #172B4D;
+      border-color: #FF8B00;
+    }
 
-        /* Seções Informativas */
-        section {
-            padding: 40px 5%;
-        }
+    .hero-midia {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
 
-        .titulo-secao {
-            text-align: center;
-            font-size: 28px;
-            color: #0056b3;
-            margin-bottom: 30px;
-            text-shadow: 1px 1px 1px #cccccc;
-        }
+    .hero-card-visual {
+      background-color: #FFFFFF;
+      padding: 15px;
+      border-radius: 12px;
+      border: 3px solid #0065FF;
+      box-shadow: 6px 6px 0 #FFAB00;
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+    }
 
-        .info-container {
-            display: flex;
-            margin-bottom: 40px;
-        }
+    .selo-destaque {
+      position: absolute;
+      top: -15px;
+      right: -10px;
+      background-color: #6554C0;
+      color: #FFFFFF;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 3px 6px #091E42;
+    }
 
-        .card {
-            background-color: #ffffff;
-            width: 32%;
-            margin-right: 2%;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #dddddd;
-            box-shadow: 0 4px 8px #dddddd;
-        }
+    .hero-card-visual img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #DEEBFF;
+      display: block;
+    }
 
-        .card:hover {
-            background-color: #f0f8ff;
-            box-shadow: 0 8px 16px #bbbbbb;
-        }
+    /* Seções Informativas */
+    .secao-info {
+      padding: 60px 5%;
+      background-color: #FFFFFF;
+      border-bottom: 4px solid #6554C0;
+      position: relative;
+    }
 
-        .card h3 {
-            color: #004085;
-            margin-bottom: 12px;
-        }
+    .titulo-secao {
+      text-align: center;
+      font-size: 2rem;
+      color: #0052CC;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 1px #DEEBFF;
+    }
 
-        /* Dados Estruturados - Tabela */
-        .tabela-container {
-            background-color: #ffffff;
-            padding: 25px;
-            border-radius: 10px;
-            border: 1px solid #dddddd;
-            box-shadow: 0 4px 8px #dddddd;
-        }
+    .subtitulo-secao {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 40px auto;
+      color: #42526E;
+      font-size: 1.1rem;
+    }
 
-        .tabela-container h3 {
-            color: #004085;
-            margin-bottom: 15px;
-            text-align: center;
-        }
+    .cards-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
 
-        table {
-            width: 100%;
-            border: 1px solid #cccccc;
-        }
+    .card {
+      flex: 1;
+      min-width: 260px;
+      background-color: #F4F5F7;
+      padding: 25px;
+      border-radius: 10px;
+      border-top: 6px solid #0065FF;
+      border-right: 2px solid #DFE1E6;
+      border-bottom: 2px solid #DFE1E6;
+      border-left: 2px solid #DFE1E6;
+      box-shadow: 0 4px 8px #C1C7D0;
+      position: relative;
+    }
 
-        th, td {
-            border: 1px solid #cccccc;
-            padding: 12px;
-            text-align: left;
-        }
+    .card-amarelo {
+      border-top: 6px solid #FFAB00;
+    }
 
-        th {
-            background-color: #0056b3;
-            color: #ffffff;
-        }
+    .card-verde {
+      border-top: 6px solid #36B37E;
+    }
 
-        tr:hover {
-            background-color: #e6f0fa;
-        }
+    .card:hover {
+      background-color: #DEEBFF;
+      border-color: #0052CC;
+      box-shadow: 0 8px 14px #7A869A;
+    }
 
-        /* Mídia / Galeria */
-        .midia-secao {
-            background-color: #e6f0fa;
-            border-top: 1px solid #d0e1f2;
-            border-bottom: 1px solid #d0e1f2;
-        }
+    .card h3 {
+      color: #172B4D;
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
 
-        .midia-grid {
-            display: flex;
-        }
+    .card p {
+      color: #344563;
+      margin-bottom: 15px;
+    }
 
-        .midia-box {
-            width: 48%;
-            margin-right: 2%;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #cccccc;
-            box-shadow: 0 4px 8px #cccccc;
-        }
+    .card ul {
+      padding-left: 20px;
+      color: #172B4D;
+    }
 
-        .midia-box h3 {
-            color: #004085;
-            margin-bottom: 15px;
-            text-align: center;
-        }
+    .card ul li {
+      margin-bottom: 6px;
+    }
 
-        video, audio {
-            width: 100%;
-            border-radius: 6px;
-            border: 1px solid #dddddd;
-        }
+    /* Tabela de Dados */
+    .tabela-wrapper {
+      background-color: #F0F7FF;
+      padding: 30px;
+      border-radius: 12px;
+      border: 2px solid #0065FF;
+      box-shadow: 0 4px 10px #B3D4FF;
+    }
 
-        .galeria-imagens {
-            display: flex;
-            margin-top: 15px;
-        }
+    .tabela-wrapper h3 {
+      color: #0747A6;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
 
-        .galeria-imagens img {
-            width: 48%;
-            margin-right: 2%;
-            border-radius: 6px;
-            border: 2px solid #0056b3;
-        }
+    table {
+      width: 100%;
+      border-spacing: 0;
+      background-color: #FFFFFF;
+      border: 2px solid #0052CC;
+    }
 
-        /* Rodapé (Footer) */
-        footer {
-            background-color: #003366;
-            color: #ffffff;
-            padding: 30px 5%;
-            display: flex;
-            align-items: center;
-            border-top: 4px solid #ffcc00;
-        }
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border: 1px solid #B3D4FF;
+    }
 
-        .footer-info {
-            width: 60%;
-        }
+    th {
+      background-color: #0052CC;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
 
-        .footer-links {
-            width: 40%;
-            display: flex;
-        }
+    tr:nth-child(even) {
+      background-color: #F4F5F7;
+    }
 
-        .footer-links a {
-            color: #ffcc00;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 4px;
-            margin-right: 10px;
-        }
+    tr:hover {
+      background-color: #FFF0B3;
+    }
 
-        .footer-links a:hover {
-            background-color: #ffcc00;
-            color: #003366;
-        }
-    </style>
+    /* Seção Mídia / Galeria */
+    .secao-galeria {
+      padding: 60px 5%;
+      background-color: #E6FCFF;
+      border-bottom: 5px solid #FF5630;
+      position: relative;
+    }
+
+    .galeria-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .midia-box {
+      flex: 1;
+      min-width: 300px;
+      background-color: #FFFFFF;
+      padding: 20px;
+      border-radius: 12px;
+      border: 3px solid #36B37E;
+      box-shadow: 5px 5px 0 #0052CC;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .midia-box:hover {
+      border-color: #FFAB00;
+      background-color: #FFFAE6;
+    }
+
+    .midia-box h3 {
+      color: #006644;
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
+
+    .midia-box video,
+    .midia-box img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #0052CC;
+      margin-bottom: 15px;
+      background-color: #091E42;
+    }
+
+    .audio-container {
+      background-color: #FFFFFF;
+      padding: 25px;
+      border-radius: 12px;
+      border: 3px solid #6554C0;
+      box-shadow: 0 4px 8px #7A869A;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .audio-info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .audio-info h3 {
+      color: #403294;
+      margin-bottom: 8px;
+    }
+
+    .audio-player {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .audio-player audio {
+      width: 100%;
+      border-radius: 30px;
+      border: 2px solid #0052CC;
+    }
+
+    /* Rodapé (Footer) */
+    footer {
+      background-color: #091E42;
+      color: #FFFFFF;
+      padding: 40px 5% 20px 5%;
+      border-top: 6px solid #36B37E;
+      position: static;
+    }
+
+    .footer-conteudo {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #253858;
+    }
+
+    .footer-coluna {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .footer-coluna h4 {
+      color: #FFAB00;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    .footer-coluna p {
+      color: #DEEBFF;
+      margin-bottom: 10px;
+    }
+
+    .footer-coluna ul {
+      padding-left: 20px;
+    }
+
+    .footer-coluna ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-coluna ul li a {
+      color: #B3D4FF;
+    }
+
+    .footer-coluna ul li a:hover {
+      color: #FF5630;
+    }
+
+    .footer-direitos {
+      text-align: center;
+      color: #8993A4;
+      font-size: 0.9rem;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+
+      .hero-texto h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Cabeçalho (Header) -->
-    <header id="topo">
-        <div class="logo">Consciência TEA</div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#informacoes">Sobre o TEA</a></li>
-                <li><a href="#dados">Dados e Níveis</a></li>
-                <li><a href="#midia">Mídia e Áudio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Cabeçalho -->
+  <header id="topo">
+    <div class="logo-area">
+      <div class="logo-badge">TEA+</div>
+      <h1>Espectro Conectado</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre-tea">Sobre o TEA</a></li>
+        <li><a href="#dados">Dados e Mercado</a></li>
+        <li><a href="#galeria">Mídia e Vivências</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Seção Principal (Hero Section) -->
-    <section id="inicio" class="hero">
-        <div class="hero-texto">
-            <h1>Informação gera empatia, respeito e inclusão.</h1>
-            <p>O Transtorno do Espectro Autista (TEA) é uma condição do neurodesenvolvimento que afeta a comunicação, a interação social e o comportamento. Compreender suas características é o primeiro passo para construir uma sociedade mais acessível.</p>
-            <a href="#informacoes" class="btn-cta">Saiba Mais sobre a Causa</a>
-        </div>
-        <div class="hero-midia">
-            <div class="selo-destaque">2 de Abril - Dia Mundial</div>
-            <img src="https://via.placeholder.com/500x320/0056b3/ffffff?text=Inclusao+e+Respeito+ao+TEA" alt="Ilustração representando a conscientização e inclusão no Transtorno do Espectro Autista">
-        </div>
-    </section>
+  <!-- Seção Principal (Hero Section) -->
+  <section id="inicio" class="hero">
+    <div class="hero-texto">
+      <div class="hero-tag">Neurodiversidade & Vida Adulta</div>
+      <h2>Compreender o Espectro é Construir Espaços Reais para Todos</h2>
+      <p>
+        Entre os 20 e 35 anos, muitos jovens adultos descobrem o diagnóstico tardio ou buscam ambientes acadêmicos e profissionais mais inclusivos. Informação direta, sem estigmas e focada na autonomia.
+      </p>
+      <a href="#sobre-tea" class="btn-cta">Explorar o Guia Prático</a>
+    </div>
 
-    <!-- Seções Informativas -->
-    <section id="informacoes">
-        <h2 class="titulo-secao">Compreendendo o Espectro Autista</h2>
-        
-        <div class="info-container">
-            <div class="card">
-                <h3>O que é o TEA?</h3>
-                <p>O Transtorno do Espectro Autista engloba diferentes condições marcadas por perturbações do desenvolvimento neurológico. Por ser um espectro, manifesta-se de maneira única em cada indivíduo.</p>
-            </div>
-            <div class="card">
-                <h3>Principais Características</h3>
-                <ul>
-                    <li>Dificuldades na comunicação verbal e não verbal.</li>
-                    <li>Desafios na interação social e reciprocidade.</li>
-                    <li>Padrões restritos e repetitivos de comportamento.</li>
-                    <li>Hipersensibilidade ou hipossensibilidade sensorial.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Importância do Diagnóstico Precoce</h3>
-                <p>A identificação nos primeiros anos de vida permite intervenções terapêuticas adequadas, promovendo maior autonomia, desenvolvimento de habilidades e qualidade de vida.</p>
-            </div>
-        </div>
+    <div class="hero-midia">
+      <div class="hero-card-visual">
+        <div class="selo-destaque">Neurodiversidade</div>
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Jovens adultos colaborando em um ambiente inclusivo e diverso">
+      </div>
+    </div>
+  </section>
 
-        <!-- Dados Estruturados (Tabela) -->
-        <div id="dados" class="tabela-container">
-            <h3>Níveis de Suporte do Transtorno do Espectro Autista</h3>
-            <table>
-                <tr>
-                    <th>Classificação</th>
-                    <th>Necessidade de Apoio</th>
-                    <th>Comunicação Social</th>
-                    <th>Comportamentos Restritos</th>
-                </tr>
-                <tr>
-                    <td>Nível 1</td>
-                    <td>Exige pouco apoio</td>
-                    <td>Dificuldade em iniciar interações sociais; respostas atípicas.</td>
-                    <td>Inflexibilidade causa interferência em um ou mais contextos.</td>
-                </tr>
-                <tr>
-                    <td>Nível 2</td>
-                    <td>Exige apoio substancial</td>
-                    <td>Déficits graves nas habilidades de comunicação verbal e não verbal.</td>
-                    <td>Dificuldade frequente de lidar com mudanças na rotina.</td>
-                </tr>
-                <tr>
-                    <td>Nível 3</td>
-                    <td>Exige apoio muito substancial</td>
-                    <td>Déficits severos na comunicação, com pouca abertura social.</td>
-                    <td>Extrema dificuldade com mudanças e grande sofrimento ao mudar o foco.</td>
-                </tr>
-            </table>
-        </div>
-    </section>
+  <!-- Seções Informativas -->
+  <section id="sobre-tea" class="secao-info">
+    <h2 class="titulo-secao">O TEA na Fase Jovem Adulta (20 a 35 anos)</h2>
+    <p class="subtitulo-secao">
+      O Transtorno do Espectro Autista não desaparece na vida adulta. Ele se manifesta em formas únicas de processar estímulos, socializar e focar em projetos.
+    </p>
 
-    <!-- Mídia / Galeria -->
-    <section id="midia" class="midia-secao">
-        <h2 class="titulo-secao">Mídia, Recursos e Galeria</h2>
-        
-        <div class="midia-grid">
-            <div class="midia-box">
-                <h3>Vídeo Educativo sobre o TEA</h3>
-                <video controls>
-                    <source src="video-conscientizacao-tea.mp4" type="video/mp4">
-                    Seu navegador não suporta a reprodução de vídeos HTML5.
-                </video>
-                <p>Assista ao material explicativo sobre acolhimento e acessibilidade no dia a dia.</p>
-            </div>
+    <div class="cards-container">
+      <div class="card">
+        <h3>Diagnóstico Tardio</h3>
+        <p>Muitos adultos chegam aos 25 ou 30 anos descobrindo o autismo após anos de camuflagem social e exaustão mental.</p>
+        <ul>
+          <li>Autoconhecimento e alívio emocional</li>
+          <li>Acesso a direitos e adaptações legais</li>
+          <li>Redução da ansiedade por sobrecarga</li>
+        </ul>
+      </div>
 
-            <div class="midia-box">
-                <h3>Relato em Áudio e Símbolos</h3>
-                <div>
-                    <p>Ouça o guia rápido de boas práticas de convivência:</p>
-                    <audio controls>
-                        <source src="guia-convivencia-tea.mp3" type="audio/mpeg">
-                        Seu navegador não suporta o elemento de áudio HTML5.
-                    </audio>
-                </div>
-                <div class="galeria-imagens">
-                    <img src="https://via.placeholder.com/220x130/ffcc00/004085?text=Simbolo+Infinito" alt="Símbolo do infinito colorido representando a neurodiversidade">
-                    <img src="https://via.placeholder.com/220x130/0056b3/ffffff?text=Fita+Quebra-Cabeca" alt="Fita com estampa de quebra-cabeça representando a conscientização do autismo">
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="card card-amarelo">
+        <h3>Universidade e Carreira</h3>
+        <p>Ambientes corporativos e acadêmicos ganham inovação quando respeitam diferentes perfis cognitivos e sensoriais.</p>
+        <ul>
+          <li>Comunicação objetiva e sem ambiguidades</li>
+          <li>Flexibilidade de ambiente e iluminação</li>
+          <li>Valorização do hiperfoco e análise detalhada</li>
+        </ul>
+      </div>
 
-    <!-- Rodapé (Footer) -->
-    <footer id="contato">
-        <div class="footer-info">
-            <p>Campanha de Conscientização sobre o TEA</p>
-            <p>Contato: contato@conscienciatea.org.br | Telefone: (00) 1234-5678</p>
-            <p>2026 Todos os direitos reservados.</p>
-        </div>
-        <div class="footer-links">
-            <a href="#topo">Voltar ao Topo</a>
-            <a href="#informacoes">Sobre</a>
-            <a href="#dados">Níveis</a>
-            <a href="#midia">Mídia</a>
-        </div>
-    </footer>
+      <div class="card card-verde">
+        <h3>Relações e Autonomia</h3>
+        <p>Construir amizades e relacionamentos saudáveis depende de respeito mútuo aos limites sensoriais e de tempo de descanso.</p>
+        <ul>
+          <li>Respeito à bateria social de cada pessoa</li>
+          <li>Clareza nas expectativas de convivência</li>
+          <li>Combate ativo ao capacitismo cotidiano</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Dados Estruturados (Tabela) -->
+    <div id="dados" class="tabela-wrapper">
+      <h3>Panorama e Adaptações Práticas no Cotidiano Jovem Adulto</h3>
+      <table>
+        <tr>
+          <th>Área da Vida</th>
+          <th>Desafio Frequente</th>
+          <th>Adaptação Inclusiva Recomendada</th>
+          <th>Impacto Positivo</th>
+        </tr>
+        <tr>
+          <td><strong>Mercado de Trabalho</strong></td>
+          <td>Entrevistas subjetivas e escritórios barulhentos</td>
+          <td>Processos seletivos práticos e uso de fones antirruído</td>
+          <td>Aumento de produtividade e retenção de talentos</td>
+        </tr>
+        <tr>
+          <td><strong>Ensino Superior</strong></td>
+          <td>Trabalhos em grupo sem divisão clara de tarefas</td>
+          <td>Escopos bem definidos e opção de entrega escrita</td>
+          <td>Melhor desempenho acadêmico e menor evasão</td>
+        </tr>
+        <tr>
+          <td><strong>Vida Social</strong></td>
+          <td>Ambientes com excesso de luzes e sons simultâneos</td>
+          <td>Encontros em locais calmos e aviso prévio de roteiro</td>
+          <td>Fortalecimento de vínculos duradouros</td>
+        </tr>
+        <tr>
+          <td><strong>Saúde Mental</strong></td>
+          <td>Burnout autista por mascaramento constante</td>
+          <td>Terapia especializada e pausas sensoriais na rotina</td>
+          <td>Equilíbrio emocional e qualidade de vida</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- Mídia / Galeria -->
+  <section id="galeria" class="secao-galeria">
+    <h2 class="titulo-secao">Mídia, Cultura e Vivências Reais</h2>
+    <p class="subtitulo-secao">
+      Recursos visuais e sonoros para ampliar a perspectiva sobre neurodiversidade, foco e expressão autêntica.
+    </p>
+
+    <div class="galeria-grid">
+      <div class="midia-box">
+        <h3>Conexão e Foco Criativo</h3>
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Pessoa utilizando fones de ouvido concentrada em projeto digital">
+        <p>Ferramentas de regulação sensorial, como fones com cancelamento de ruído, ajudam jovens adultos a manterem o bem-estar em espaços urbanos.</p>
+      </div>
+
+      <div class="midia-box">
+        <h3>Perspectivas em Movimento</h3>
+        <video controls poster="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeo HTML5.
+        </video>
+        <p>Conteúdo audiovisual ilustrativo reforçando a importância da representatividade e da escuta ativa na juventude.</p>
+      </div>
+    </div>
+
+    <!-- Áudio Incorporado -->
+    <div class="audio-container">
+      <div class="audio-info">
+        <h3>Pausa Sensorial & Reflexão Sonora</h3>
+        <p>Ouça uma faixa de áudio ambiente pensada para momentos de descompressão após longas jornadas de estudo ou trabalho.</p>
+      </div>
+      <div class="audio-player">
+        <audio controls>
+          <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de áudio HTML5.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé (Footer) -->
+  <footer id="contato">
+    <div class="footer-conteudo">
+      <div class="footer-coluna">
+        <h4>Espectro Conectado</h4>
+        <p>Iniciativa educativa voltada para jovens adultos de 20 a 35 anos sobre conscientização, direitos e inclusão do Transtorno do Espectro Autista.</p>
+      </div>
+
+      <div class="footer-coluna">
+        <h4>Navegação Rápida</h4>
+        <ul>
+          <li><a href="#topo">Voltar ao Topo</a></li>
+          <li><a href="#sobre-tea">O TEA na Vida Adulta</a></li>
+          <li><a href="#dados">Tabela de Adaptações</a></li>
+          <li><a href="#galeria">Galeria Multimídia</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-coluna">
+        <h4>Contato e Apoio</h4>
+        <p>E-mail: contato@espectroconectado.org.br</p>
+        <p>Central de Informação: (11) 99999-0000</p>
+        <p>Atendimento digital em todo o Brasil.</p>
+      </div>
+    </div>
+
+    <div class="footer-direitos">
+      <p>© 2026 Espectro Conectado - Todos os direitos reservados. Respeito à Neurodiversidade.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
